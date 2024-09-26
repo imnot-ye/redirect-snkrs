@@ -4,6 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reindirizzamento a SNKRS</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa; /* Colore di sfondo chiaro */
+            font-family: Arial, sans-serif; /* Font di default */
+        }
+
+        h1 {
+            color: #000; /* Colore del titolo */
+        }
+
+        .illuminated-text {
+            color: #ffffff; /* Colore del testo */
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.5); /* Effetto di illuminazione */
+            margin: 20px 0; /* Margine sopra e sotto il testo */
+            font-size: 24px; /* Dimensione del font */
+        }
+
+        .button {
+            background-color: #e297f6; /* Colore di sfondo del pulsante */
+            color: #fff; /* Colore del testo del pulsante */
+            border: none; /* Rimuovi il bordo */
+            border-radius: 10px; /* Bordi arrotondati */
+            padding: 10px 20px; /* Padding interno del pulsante */
+            font-size: 16px; /* Dimensione del font */
+            cursor: pointer; /* Cambia il cursore quando si passa sopra */
+            transition: background-color 0.3s; /* Transizione per il colore di sfondo */
+        }
+
+        .button:hover {
+            background-color: #d389e6; /* Colore di sfondo al passaggio del mouse */
+        }
+    </style>
     <script type="text/javascript">
         // Reindirizza automaticamente alla URL desiderata
         window.onload = function() {
@@ -13,6 +51,9 @@
 </head>
 <body>
     <h1>Reindirizzamento...</h1>
+    <img src="tdv.png" alt="Immagine TDV" style="max-width: 100%; height: auto; margin: 20px 0;">
+    <p class="illuminated-text">TDV Snkrs Redirect</p>
+    <a href="snkrs://product/DA1469-001" class="button">Vai a SNKRS</a>
     <p>Se non vieni reindirizzato automaticamente, <a href="snkrs://product/DA1469-001">clicca qui</a>.</p>
 </body>
 </html>
